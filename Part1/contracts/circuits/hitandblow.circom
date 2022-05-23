@@ -4,6 +4,7 @@ include "../../node_modules/circomlib/circuits/comparators.circom";
 include "../../node_modules/circomlib/circuits/bitify.circom";
 include "../../node_modules/circomlib/circuits/poseidon.circom";
 
+//hit: color + position blow: color only 
 template HitAndBlow() {
     // Public inputs
     signal input pubGuessA;
