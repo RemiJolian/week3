@@ -63,7 +63,7 @@ template MastermindVariation() {
     // Count hit & blow
     var hit = 0;
     var blow = 0;
-    component equalHB[36];
+    component equalHB[25];
 
     for (j=0; j<5; j++) {
         for (k=0; k<5; k++) {
