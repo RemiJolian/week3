@@ -27,13 +27,15 @@ template MastermindVariation() {
     // Output
     signal output solnHashOut;
 
-    var guess[6] = [pubGuessA, pubGuessB, pubGuessC, pubGuessD, pubGuessE];
-    var soln[6] =  [privSolnA, privSolnB, privSolnC, privSolnD, privSolnE];
+
+    //new variation has one more slot for colors
+    var guess[5] = [pubGuessA, pubGuessB, pubGuessC, pubGuessD, pubGuessE];
+    var soln[5] =  [privSolnA, privSolnB, privSolnC, privSolnD, privSolnE];
     var j = 0;
     var k = 0;
-    component lessThan[12];
-    component equalGuess[15];
-    component equalSoln[15];
+    component lessThan[10];
+    component equalGuess[10];
+    component equalSoln[10];
     var equalIdx = 0;
 
     // Create a constraint that the solution and guess digits are all less than 10.
